@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# AI-readable business context: /llms.txt
