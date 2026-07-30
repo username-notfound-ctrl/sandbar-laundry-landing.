@@ -45,42 +45,57 @@
   <div class="wrap">
     <div class="card-grid cols-3">
       <div class="price-card">
-        <span class="price-tag">Starter</span>
-        <h3>For one or two people</h3>
-        <p>One bag per cycle — a solid fit for a single person or a couple keeping up with the basics.</p>
+        <span class="price-tag">Pay as you go</span>
+        <h3>Drop-in</h3>
+        <p>Priced per bag, no commitment — the easiest way to try Sandbar out.</p>
         <ul class="price-list">
-          <li>One Sandbar bag per cycle</li>
-          <li>Weekly or biweekly drop-off</li>
-          <li>Wash, dry &amp; fold included</li>
-          <li>Text notification when ready</li>
+          <li>Drop off anytime at any Hub</li>
+          <li>Standard wash, dry &amp; fold turnaround</li>
+          <li>Text notification when it's ready</li>
         </ul>
       </div>
       <div class="price-card featured">
-        <span class="price-tag">Household</span>
-        <h3>For families &amp; busy homes</h3>
-        <p>Multiple bags per cycle, built for households with more laundry and less time.</p>
+        <span class="price-tag">Most popular</span>
+        <h3>Sandbar Regular</h3>
+        <p>Weekly or biweekly service at a member rate — built for your normal laundry rhythm.</p>
         <ul class="price-list">
-          <li>Multiple Sandbar bags per cycle</li>
-          <li>Weekly drop-off</li>
-          <li>Wash, dry &amp; fold included</li>
-          <li>Priority text notification</li>
+          <li>Everything in Drop-in</li>
+          <li>Discounted per-bag rate</li>
+          <li>Priority turnaround</li>
+          <li>Skip or pause anytime</li>
           <li>Founding-member rate locked in</li>
         </ul>
       </div>
       <div class="price-card">
-        <span class="price-tag">Doorstep · Coming later</span>
-        <h3>Pickup &amp; delivery</h3>
-        <p>Skip the Hub entirely — we'll come to you. Launching after our neighborhood Hub model is running.</p>
+        <span class="price-tag">Full service · coming after launch</span>
+        <h3>Sandbar Premium</h3>
+        <p>Everything in Sandbar Regular, plus residential pickup &amp; delivery — for when you'd rather not leave the house.</p>
         <ul class="price-list">
-          <li>Scheduled home pickup</li>
-          <li>Wash, dry &amp; fold included</li>
-          <li>Delivered back to your door</li>
+          <li>Everything in Sandbar Regular</li>
+          <li>Residential pickup &amp; drop-off</li>
+          <li>Scheduled delivery windows</li>
           <li>Waitlist members notified first</li>
         </ul>
       </div>
     </div>
 
     <p class="honest-note">We're pre-launch, so we're not publishing exact dollar figures yet — they're being finalized alongside our first Hub. Join the waitlist and we'll email you real pricing before anyone else sees it, plus any founding-member rate we lock in.</p>
+
+    <div class="stamp-card" id="delivery-waitlist" style="margin-top: 32px; max-width: 520px;">
+      <h3>Only interested in Sandbar Premium?</h3>
+      <p>Join the delivery waitlist specifically and we'll reach out first when pickup &amp; delivery opens in your neighborhood.</p>
+      <form class="waitlist-form" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-waitlist-form style="margin-top: 16px;">
+        <input type="hidden" name="form-name" value="waitlist">
+        <input type="hidden" name="interest" value="delivery">
+        <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="field">
+          <label for="delivery-email">Email</label>
+          <input id="delivery-email" name="email" type="email" placeholder="you@email.com" required>
+        </div>
+        <button type="submit" class="btn btn-outline">Join the delivery waitlist</button>
+      </form>
+      <p class="form-msg" role="status"></p>
+    </div>
   </div>
 </section>
 
@@ -106,6 +121,7 @@
       <h2 style="color: var(--paper);">Join the waitlist for founding pricing.</h2>
       <form class="waitlist-form inline" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-waitlist-form>
         <input type="hidden" name="form-name" value="waitlist">
+        <input type="hidden" name="interest" value="general">
         <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
         <div class="field">
           <label for="name2">Name</label>
