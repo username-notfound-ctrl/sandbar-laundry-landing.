@@ -368,6 +368,30 @@ footer.site-footer {
 .footer-grid ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; }
 .footer-grid a { text-decoration: none; opacity: .85; }
 .footer-grid a:hover { opacity: 1; color: var(--gold-bright); }
+
+.social-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line-light);
+  color: var(--paper);
+  opacity: 0.85;
+  transition: border-color .15s ease, color .15s ease, opacity .15s ease;
+}
+.social-links a:hover {
+  border-color: var(--gold);
+  color: var(--gold-bright);
+  opacity: 1;
+}
+.social-links svg { width: 17px; height: 17px; }
 .footer-bottom {
   border-top: 1px solid var(--line-light);
   padding-top: 22px;

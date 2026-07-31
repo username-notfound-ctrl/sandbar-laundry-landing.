@@ -56,6 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
             msg.classList.remove('err');
             msg.classList.add('show', 'ok');
           }
+          if (typeof gtag === 'function') {
+            gtag('event', 'waitlist_signup', {
+              interest: payload.interest || 'general',
+              page_path: window.location.pathname,
+            });
+          }
         })
         .catch(function () {
           if (msg) {
