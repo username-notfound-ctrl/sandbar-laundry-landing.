@@ -28,6 +28,14 @@ Sandbar Laundry Co., LLC is a registered North Carolina limited liability compan
 - Military and first responder discounts and loyalty perks are planned as part of the initial customer offering
 - Specific pricing has not been published yet — check sandbarlaundryco.com or join the waitlist for updates
 
+## Site pages
+
+- Home (https://sandbarlaundryco.com/) — overview, value proposition, and waitlist signup
+- How It Works (https://sandbarlaundryco.com/how-it-works.html) — step-by-step description of the drop-off, wash, and pickup process
+- Pricing (https://sandbarlaundryco.com/pricing.html) — subscription tiers (Drop-in, Sandbar Regular, Sandbar Premium) and founding-member pricing framing
+- FAQ (https://sandbarlaundryco.com/faq.html) — frequently asked questions about launch timing, service area, and discounts
+- Our Story (https://sandbarlaundryco.com/about.html) — company background, veteran-owned and sustainability commitments
+
 ## Frequently asked questions
 
 **What is Sandbar Laundry Co.?**
