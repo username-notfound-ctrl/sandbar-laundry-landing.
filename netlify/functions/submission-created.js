@@ -1,5 +1,15 @@
 // netlify/functions/submission-created.js
 //
+// NOTE (9/7): Netlify's current docs no longer list "submission-created" as
+// a valid event name -- it appears to have been renamed to "formSubmitted"
+// as part of a 2026 platform update. Zero invocations were logged for this
+// function across two real test submissions, consistent with it no longer
+// being wired to anything. See netlify/functions/form-submitted.mjs, which
+// uses the current event syntax and is the one actually expected to fire.
+// Left in place as a low-cost hedge in case this file matters for some
+// account/runtime configurations -- delete it once form-submitted.mjs is
+// confirmed working via a live test.
+//
 // Auto-fires whenever ANY Netlify Form on this site is submitted — no webhook
 // URL to configure, Netlify's file-naming convention wires the trigger itself.
 // Docs: https://docs.netlify.com/functions/trigger-on-events/
