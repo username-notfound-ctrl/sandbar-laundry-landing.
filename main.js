@@ -62,6 +62,17 @@ document.addEventListener('DOMContentLoaded', function () {
               page_path: window.location.pathname,
             });
           }
+
+          // Send the confirmation email directly rather than relying on
+          // Netlify's server-side form-submission event trigger, which
+          // did not fire reliably in testing.
+          fetch('/.netlify/functions/send-confirmation', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          }).catch(function (err) {
+            console.error('Confirmation email request failed:', err);
+          });
         })
         .catch(function () {
           if (msg) {
